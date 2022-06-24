@@ -1,5 +1,5 @@
 import React from "react";
-import { IconWrapper, LogoContainer, LogoTitle } from "./Styles";
+import { IconWrapper, LogoContainer, LogoTitle } from "./styles";
 
 export const Logo: React.FC = () => {
   return (

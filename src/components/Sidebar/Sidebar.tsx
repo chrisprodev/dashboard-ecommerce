@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
 import MenuItem from "../MenuItem";
+import { Divider } from "../../styled-components/Dividers";
 import { dashMenu, dashOpts } from "../../constants/dashboardMenu";
 import {
-  Divider,
   MenuList,
   OptionItem,
   Options,
   SidebarContainer,
   TopMenu,
-} from "./Styles";
+} from "./styles";
 
 export const Sidebar: React.FC = () => {
   const [active, setActive] = useState(4);
