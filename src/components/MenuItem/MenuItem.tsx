@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./Styles";
+import { Container } from "./styles";
 
 interface Props {
   active: boolean;
