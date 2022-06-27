@@ -1,15 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
+  --white: #fff;
+  --black: #16181d;
+  --gray-50: #e2e9ee;
   --gray-100: #f6f8fa;
+  --gray-200: #e5ebef;
+  --gray-300: #97a0b9;
+  --gray-500: #747d84;
+  --gray-600: #565f69;
+  --green-400: #dffae6;
+  --green-800: #5c8373;
+
+  --blue-700: #235de7;
 }
 
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  color: var(--black);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas,
     "Courier New", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
 }
