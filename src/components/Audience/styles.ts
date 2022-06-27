@@ -31,6 +31,7 @@ export const Filters = styled.div`
   display: flex;
   gap: 10px;
   margin-top: 25px;
+  padding-bottom: 35px;
 `;
 
 export const Filter = styled.span`
