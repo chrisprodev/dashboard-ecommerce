@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./styles";
+import * as Styles from "./styles";
 
 interface Props {
   active: boolean;
@@ -15,9 +15,9 @@ export const MenuItem: React.FC<Props> = ({
   onSelect,
 }) => {
   return (
-    <Container onClick={onSelect} active={active}>
+    <Styles.Container onClick={onSelect} active={active}>
       {icon}
       <span>{name}</span>
-    </Container>
+    </Styles.Container>
   );
 };

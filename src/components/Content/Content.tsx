@@ -1,11 +1,13 @@
 import React from "react";
-import Audience from "../Audience";
-import { Container } from "./styles";
+import Audience from "./audience";
+import * as Styles from "./styles";
 
 const displayContent = 4;
 
 export const Content: React.FC = () => {
   return (
-    <Container>{displayContent === 4 && <Audience />}</Container>
+    <Styles.Container>
+      {displayContent === 4 && <Audience />}
+    </Styles.Container>
   );
 };

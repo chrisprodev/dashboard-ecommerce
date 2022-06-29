@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Content } from "../components/Content/Content";
-import Sidebar from "../components/Sidebar";
+import { Content } from "../components/content/Content";
+import Sidebar from "../components/sidebar";
 
 const App: React.FC = () => {
   return (

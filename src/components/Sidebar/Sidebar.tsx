@@ -1,15 +1,9 @@
 import React, { useState } from "react";
-import Logo from "../Logo";
-import MenuItem from "../MenuItem";
+import Logo from "../logo";
+import MenuItem from "./menu-item";
 import { Divider } from "../../styled-components/Dividers";
 import { dashMenu, dashOpts } from "../../constants/dashboardMenu";
-import {
-  MenuList,
-  OptionItem,
-  Options,
-  SidebarContainer,
-  TopMenu,
-} from "./styles";
+import * as Styles from "./styles";
 
 export const Sidebar: React.FC = () => {
   const [active, setActive] = useState(4);
@@ -19,10 +13,10 @@ export const Sidebar: React.FC = () => {
   };
 
   return (
-    <SidebarContainer>
-      <TopMenu>
+    <Styles.SidebarContainer>
+      <Styles.TopMenu>
         <Logo />
-        <MenuList>
+        <Styles.MenuList>
           {dashMenu.map((menuItem) =>
             menuItem.name === "Divider" ? (
               <Divider key={menuItem.id.toString()} />
@@ -36,17 +30,17 @@ export const Sidebar: React.FC = () => {
               />
             )
           )}
-        </MenuList>
-      </TopMenu>
+        </Styles.MenuList>
+      </Styles.TopMenu>
 
-      <Options>
+      <Styles.Options>
         {dashOpts.map((optionItem) => (
-          <OptionItem key={optionItem.id.toString()}>
+          <Styles.OptionItem key={optionItem.id.toString()}>
             {optionItem.icon}
             <span>{optionItem.name}</span>
-          </OptionItem>
+          </Styles.OptionItem>
         ))}
-      </Options>
-    </SidebarContainer>
+      </Styles.Options>
+    </Styles.SidebarContainer>
   );
 };
