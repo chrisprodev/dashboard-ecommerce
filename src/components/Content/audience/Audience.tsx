@@ -3,6 +3,7 @@ import { mockFilters } from "../../../constants/filters";
 import { Divider } from "../../../styled-components/Dividers";
 import SubscribersList from "./subscribers-list";
 import * as Styles from "./styles";
+import Stats from "./stats";
 
 export const Audience: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ export const Audience: React.FC = () => {
       <Styles.Header>
         <h2>Audience</h2>
       </Styles.Header>
+      <Stats />
       <Divider />
       <Styles.SubContent>
         <h3>Subscribers</h3>

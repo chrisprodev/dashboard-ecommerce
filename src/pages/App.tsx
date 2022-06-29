@@ -16,4 +16,5 @@ export default App;
 
 const AppContainer = styled.main`
   display: flex;
+  height: 100vh;
 `;
