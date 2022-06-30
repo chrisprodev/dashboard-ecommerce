@@ -1,6 +1,7 @@
 import React from "react";
 import useSubscribers from "../../../../hooks/useSubscribers";
 import ChevronDown from "../../../../icons/ChevronDown";
+import { CheckContainer } from "../../../../styled-components/Inputs";
 import * as Styles from "./styles";
 
 export const SubscribersList: React.FC = () => {
@@ -12,9 +13,9 @@ export const SubscribersList: React.FC = () => {
   return (
     <>
       <Styles.Container>
-        <Styles.CheckContainer>
+        <CheckContainer>
           <input type="checkbox" />
-        </Styles.CheckContainer>
+        </CheckContainer>
         <Styles.Text>
           Full name <ChevronDown size="18" marginLeft="10" />
         </Styles.Text>
@@ -38,9 +39,9 @@ export const SubscribersList: React.FC = () => {
       {data &&
         data.map((subscriber: any) => (
           <Styles.Container key={subscriber.id}>
-            <Styles.CheckContainer>
+            <CheckContainer>
               <input type="checkbox" />
-            </Styles.CheckContainer>
+            </CheckContainer>
             <Styles.Name>{subscriber.name}</Styles.Name>
             <Styles.Text>{subscriber.email}</Styles.Text>
             <Styles.StatusBadge>Subscribed</Styles.StatusBadge>

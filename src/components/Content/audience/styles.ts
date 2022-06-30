@@ -55,24 +55,3 @@ export const Filter = styled.span`
     width: auto;
   }
 `;
-
-export const AddFilter = styled.span`
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: solid 2px var(--gray-200);
-  font-weight: 500;
-  padding: 5px 10px;
-  border-radius: 5px;
-
-  svg {
-    color: var(--gray-600);
-    height: 18px;
-    width: auto;
-    transform: rotate(45deg);
-  }
-
-  span {
-    margin-left: 10px;
-  }
-`;
