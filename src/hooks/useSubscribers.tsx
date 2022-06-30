@@ -22,7 +22,14 @@ const useSubscribers = () => {
         const result = await response.json();
         setUsers({
           loading: false,
-          data: result,
+          data: result.map((dataItem: any) => ({
+            id: dataItem.id,
+            name: dataItem.name,
+            email: dataItem.id,
+            website: dataItem.website,
+            city: dataItem.address.city,
+            status: true,
+          })),
           error: null,
         });
       } catch (err: any) {
