@@ -27,7 +27,7 @@ export const StatusBadge = styled.span`
   padding: 5px 15px;
   border-radius: 5px;
   font-weight: 500;
-  width: 124px;
+  width: 84px;
 `;
 
 export const OptionsSVG = styled.svg`

@@ -43,9 +43,11 @@ export const SubscribersList: React.FC = () => {
             </Styles.CheckContainer>
             <Styles.Name>{subscriber.name}</Styles.Name>
             <Styles.Text>{subscriber.email}</Styles.Text>
-            <Styles.StatusBadge>Subscribed</Styles.StatusBadge>
+            <Styles.StatusBadge>
+              {subscriber.status ? "Active" : "Inactive"}
+            </Styles.StatusBadge>
             <Styles.Text>{subscriber.website}</Styles.Text>
-            <Styles.Text>{subscriber.address.city}</Styles.Text>
+            <Styles.Text>{subscriber.city}</Styles.Text>
             <Styles.OptionsSVG
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
