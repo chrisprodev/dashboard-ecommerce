@@ -4,6 +4,7 @@ import { Divider } from "../../../styled-components/Dividers";
 import SubscribersList from "./subscribers-list";
 import * as Styles from "./styles";
 import Stats from "./stats";
+import FilterDropdown from "./filter-dropdown";
 
 export const Audience: React.FC = () => {
   return (
@@ -16,10 +17,7 @@ export const Audience: React.FC = () => {
       <Styles.SubContent>
         <h3>Subscribers</h3>
         <Styles.Filters>
-          <Styles.AddFilter>
-            {mockFilters[0].icon}
-            <span>Add Filter</span>
-          </Styles.AddFilter>
+          <FilterDropdown icon={mockFilters[0].icon} />
           {mockFilters.map((filter) => (
             <Styles.Filter key={filter.id}>
               {filter.content}
